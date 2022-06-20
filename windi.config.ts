@@ -6,10 +6,10 @@ export default defineConfig({
 		include: ["src/**/*.{vue,html,jsx,tsx}"],
 		exclude: ["node_modules", ".git"],
 	},
-	alias: {
-		centerItems: "flex justify-center items-center",
+	alias: {},
+	shortcuts: {
+		"center-items": "flex justify-center items-center",
 	},
-	shortcuts: {},
 	darkMode: "class",
 	theme: {
 		extend: {
