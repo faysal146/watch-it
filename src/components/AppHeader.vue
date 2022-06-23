@@ -1,8 +1,5 @@
 <template>
-	<header
-		class="py-3 px-6 app-bg-main my-3 flex items-center app-width"
-		ref="el"
-	>
+	<header class="py-2 px-6 app-bg-main flex items-center app-width" ref="el">
 		<h2 class="flex text-xl">
 			<svg
 				class="bg-stroke-blue-gray-600"
