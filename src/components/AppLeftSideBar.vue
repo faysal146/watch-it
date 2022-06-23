@@ -1,7 +1,5 @@
 <template>
-	<aside
-		:class="`space-y-10 p-5 font-bold app-bg-main fixed h-[calc(100%-${height}px)]`"
-	>
+	<aside class="space-y-10 p-5 font-bold app-bg-main h-full">
 		<button
 			class="absolute right-[-12px] w-6 h-6 rounded-full bg-emerald-500"
 			@click="toogleSideBarText()"
