@@ -1,8 +1,11 @@
 html,
 body {
-	min-height: 100%;
+	/* min-height: 100%; */
+}
+#app {
+	@apply p-2 min-h-screen flex flex-col;
 }
 
 .app-width {
-	@apply w-[95%] mx-auto;
+	/* @apply w-[98%] mx-auto; */
 }
