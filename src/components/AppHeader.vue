@@ -1,5 +1,8 @@
 <template>
-	<header class="py-2 px-6 app-bg-main flex items-center app-width" ref="el">
+	<header
+		class="py-2 px-6 app-bg-main flex items-center app-width sticky top-0 z-50"
+		ref="el"
+	>
 		<h2 class="flex text-xl">
 			<svg
 				class="bg-stroke-blue-gray-600"
@@ -75,8 +78,6 @@
 
 <script lang="ts" setup>
 import { inject } from "vue";
-import useElHeight from "@/composable/useElHeight";
-const { el } = useElHeight();
 const toggleDark =
 	inject<(value?: boolean | undefined) => boolean>("toggleDark")!;
 </script>
