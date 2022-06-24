@@ -1,8 +1,20 @@
 <template>
-	<aside class="space-y-10 p-5 font-bold app-bg-main h-full">
+	<aside
+		:class="`space-y-10 p-5 font-bold app-bg-main fixed bottom-2 ${
+			showSideBarText && 'w-48'
+		}`"
+		:style="{
+			top: height + position + 8 + 'px',
+		}"
+	>
 		<button
 			class="absolute right-[-12px] w-6 h-6 rounded-full bg-emerald-500"
-			@click="toogleSideBarText()"
+			@click="
+				() => {
+					$emit('toggleOpenDraw', !showSideBarText);
+					toogleSideBarText();
+				}
+			"
 		>
 			{{ showSideBarText ? "<" : ">" }}
 		</button>
@@ -21,11 +33,11 @@
 </template>
 
 <script setup lang="ts">
-import { useToggle } from "@vueuse/core";
 import useElHeight from "@/composable/useElHeight";
-const { height } = useElHeight();
+import { useToggle } from "@vueuse/core";
 
 const [showSideBarText, toogleSideBarText] = useToggle(true);
+const { height, position } = useElHeight();
 
 const items = [
 	{
