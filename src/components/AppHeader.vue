@@ -77,7 +77,9 @@
 </template>
 
 <script lang="ts" setup>
+import useElHeight from "@/composable/useElHeight";
 import { inject } from "vue";
+const { el } = useElHeight();
 const toggleDark =
 	inject<(value?: boolean | undefined) => boolean>("toggleDark")!;
 </script>
