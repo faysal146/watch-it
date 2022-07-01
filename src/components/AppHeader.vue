@@ -3,7 +3,7 @@
 		class="py-2 px-6 app-bg-main flex items-center app-width sticky top-0 z-50"
 		ref="el"
 	>
-		<h2 class="flex text-xl">
+		<h2 class="flex text-xl text-emerald-500 mr-4 font-semibold">
 			<svg
 				class="bg-stroke-blue-gray-600"
 				xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,11 @@
 			</svg>
 			<span>Watch<span>It</span> </span>
 		</h2>
-		<input type="text" class="py-2 px-4 rounded-md ml-4" />
+		<input
+			type="text"
+			class="py-2 px-4 rounded-md ml-8 bodyBg focus:(outline-solid-gray-400 border-transparent) w-72"
+			placeholder="Search here..."
+		/>
 		<div class="flex space-x-8 ml-auto">
 			<button @click="toggleDark()">
 				<svg
@@ -56,7 +60,7 @@
 				</svg>
 			</button>
 			<button
-				class="flex flex-row justify-between bg-green-300 rounded-md p-2"
+				class="flex flex-row justify-between bg-emerald-400 text-slate-900 rounded-md p-2"
 			>
 				<span
 					class="w-10 h-10 rounded-full overflow-hidden inline-block"
@@ -66,10 +70,10 @@
 						src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Wayfarers&hairColor=BlondeGolden&facialHairType=BeardMajestic&facialHairColor=BrownDark&clotheType=GraphicShirt&clotheColor=PastelRed&graphicType=Resist&eyeType=Wink&eyebrowType=RaisedExcitedNatural&mouthType=Sad&skinColor=Yellow"
 					/>
 				</span>
-				<span class="inline-block ml-3">
-					<span>Faysal Ahmed</span>
+				<span class="inline-block ml-3 text-left">
+					<span class="font-semibold">Faysal Ahmed</span>
 					<br />
-					<span>Web Developer</span>
+					<span class="text-sm font-light">Web Developer</span>
 				</span>
 			</button>
 		</div>
