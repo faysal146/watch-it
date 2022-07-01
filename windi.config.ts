@@ -1,5 +1,5 @@
 import { defineConfig } from "windicss/helpers";
-// import formsPlugin from "windicss/plugin/forms";
+import formsPlugin from "windicss/plugin/forms";
 
 export default defineConfig({
 	extract: {
@@ -9,8 +9,9 @@ export default defineConfig({
 	alias: {},
 	shortcuts: {
 		"center-items": "flex justify-center items-center",
-		"app-bg-main":
-			"bg-emerald-500 dark:bg-dark-500 dark:text-white rounded-md",
+		// bg-emerald-500
+		"app-bg-main": "dark:bg-gray-900 rounded-md",
+		bodyBg: "text-slate-900 dark:bg-slate-700 dark:text-light-900 ",
 	},
 	darkMode: "class",
 	theme: {
@@ -20,5 +21,5 @@ export default defineConfig({
 			},
 		},
 	},
-	// plugins: [formsPlugin],
+	plugins: [formsPlugin],
 });
