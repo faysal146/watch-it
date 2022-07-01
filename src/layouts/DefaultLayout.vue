@@ -4,5 +4,5 @@ import Header from "@/components/AppHeader.vue";
 
 <template>
 	<Header></Header>
-	<main><slot /></main>
+	<main class="app-width mt-2 flex-1"><slot /></main>
 </template>
